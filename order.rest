@@ -1,0 +1,129 @@
+POST http://localhost:4000/order/add
+content-type: application/json
+
+{
+    "OrderNo":"800991111",
+    "Date":"2017-11-18",
+    "Name":"SAra",
+    "Address":"Saturn",
+    "AadharNo":"166550",
+    "Tehsil":"mariott",
+    "District":"rastampt",
+    "PinCode":"70005111",
+    "State":"rant",
+    "Whatsapp":"7000888999",
+    "Contact":"7777111999",
+    "CompanyName":"oltu metrics",
+    "Order":[{
+        "Details":"something old",
+        "Qty":"5443534",
+        "Rate":"3434",
+        "Amount":"4343000"
+    }],
+    "TotalAmt":"1233234",
+    "Advance":"04328",
+    "DeliveryDate":"2018-04-03",
+    "DeliveryPlace":"Rancfi",
+    "Deposit":{
+        "DDate":"2017-09-16",
+        "Amount":"09400000",
+        "UIRNo":"rere234",
+        "Bank":"erewew"
+    },
+    "Ac":"HDFC",
+    "AcHolder":"rich person",
+    "AcNo":"3443424",
+    "IFSC":"jifsc",
+    "DealerName":"lasfljlda",
+    "DealerContact":"9999009999"
+}
+###
+GET http://localhost:4000/
+###
+GET http://localhost:4000/order/show
+###
+GET http://localhost:4000/order/show/id/5fc9f95e6dd1ea0acc86b0f4
+
+###
+GET http://localhost:4000/order/show/contact/
+###
+DELETE  http://localhost:4000/order/delete/mob/7777777333
+###
+PUT   http://localhost:4000/order/update/8987702899
+content-type: application/json
+
+{
+    "OrderNo":"09899088",
+    "Date":"2020-07-07",
+    "Name":" Kumar Singh",
+    "Address":"world business dom",
+    "Tehsil":"korea ",
+    "District":"mezru updated",
+    "PinCode":"011001",
+    "State":"jester",
+    "Whatsapp":"8987702899",
+    "Contact":"8987702899",
+    "CompanyName":"oltu technologies",
+    "Order":[{
+        "Details":"something new",
+        "Qty":"5443534",
+        "Rate":"3434",
+        "Amount":"4343434"
+    }],
+    "TotalAmt":"3243234",
+    "Advance":"04328",
+    "DeliveryDate":"2018-04-03",
+    "DeliveryPlace":"Rancfi",
+    "Deposit":{
+        "DDate":"2017-09-16",
+        "Amount":"09434343",
+        "UIRNo":"aaaaa_ere",
+        "Bank":"erewew"
+    },
+    "AcHolder":"some holder",
+    "AcNo":"3443424",
+    "IFSC":"jifsc",
+    "DealerName":"lasfljlda",
+    "DealerContact":"9999999999"
+}
+###
+
+
+PUT  http://localhost:4000/order/update/2/1500071
+content-type: application/json
+
+{
+    "OrderNo":"0000001",
+    "Date":"2020-07-18",
+    "Name":"Amitesh",
+    "Address":"work stream",
+    "AadharNo":"1700123",
+    "Tehsil":"russia",
+    "District":"mezru",
+    "PinCode":"999222",
+    "State":"kiev",
+    "Whatsapp":"7000380002",
+    "Contact":"7773337000",
+    "CompanyName":"techstack",
+    "Order":[{
+        "Details":"something new",
+        "Qty":"5443534",
+        "Rate":"3434",
+        "Amount":"4343434"
+    }],
+    "TotalAmt":"3243234",
+    "Advance":"04328",
+    "DeliveryDate":"2018-04-03",
+    "DeliveryPlace":"Rancfi",
+    "Deposit":{
+        "DDate":"2017-09-16",
+        "Amount":"09400000",
+        "UIRNo":"rere234",
+        "Bank":"erewew"
+    },
+    "AcHolder":"rich person",
+    "AcNo":"3443424",
+    "IFSC":"jifsc",
+    "DealerName":"lasfljlda",
+    "DealerContact":"9999999999"
+}
