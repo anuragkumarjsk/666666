@@ -126,11 +126,11 @@ export default function Crudnav_Updatebtn(props) {
         // alert('inside show'+props.Active)
             switch(props.Active)
                 {
-                case 1:axios.get(`http://localhost:4000/order/show/1/${props.contact}`).then((d)=>{console.log(d.data);localStorage.setItem('updateItem',JSON.stringify(d.data));upformset(d.data) }).catch((err)=>{console.log(err)})
+                case 1:axios.get(`/order/show/1/${props.contact}`).then((d)=>{console.log(d.data);localStorage.setItem('updateItem',JSON.stringify(d.data));upformset(d.data) }).catch((err)=>{console.log(err)})
                         break
-                case 2:axios.get(`http://localhost:4000/order/show/2/${props.order}`).then((d)=>{console.log(d.data);localStorage.setItem('updateItem',JSON.stringify(d.data));upformset(d.data) }).catch((err)=>{console.log(err)})
+                case 2:axios.get(`/order/show/2/${props.order}`).then((d)=>{console.log(d.data);localStorage.setItem('updateItem',JSON.stringify(d.data));upformset(d.data) }).catch((err)=>{console.log(err)})
                         break                
-                case 3:axios.get(`http://localhost:4000/order/show/3/${props.adhaar}`).then((d)=>{console.log(d.data);localStorage.setItem('updateItem',JSON.stringify(d.data));upformset(d.data) }).catch((err)=>{console.log(err)})
+                case 3:axios.get(`/order/show/3/${props.adhaar}`).then((d)=>{console.log(d.data);localStorage.setItem('updateItem',JSON.stringify(d.data));upformset(d.data) }).catch((err)=>{console.log(err)})
                         break
                 default: alert('uable to find the case for show record')
                     break
@@ -141,11 +141,11 @@ export default function Crudnav_Updatebtn(props) {
         // alert('inside update'+props.adhaar+JSON.stringify(upform))
         e.preventDefault();
         switch(props.Active){
-            case 1:axios.put(`http://localhost:4000/order/update/1/${props.contact}`,upform).then((d)=>{console.log('updated record '+d)}).catch((err)=>{console.log(err)})
+            case 1:axios.put(`/order/update/1/${props.contact}`,upform).then((d)=>{console.log('updated record '+d)}).catch((err)=>{console.log(err)})
                    break
-           case 2:axios.put(`http://localhost:4000/order/update/2/${props.order}`,upform).then((d)=>{console.log('updated record '+d)}).catch((err)=>{console.log(err)})
+           case 2:axios.put(`/order/update/2/${props.order}`,upform).then((d)=>{console.log('updated record '+d)}).catch((err)=>{console.log(err)})
                    break                
-           case 3:axios.put(`http://localhost:4000/order/update/3/${props.adhaar}`,upform).then((d)=>{console.log('updated record '+d)}).catch((err)=>{console.log(err)})
+           case 3:axios.put(`/order/update/3/${props.adhaar}`,upform).then((d)=>{console.log('updated record '+d)}).catch((err)=>{console.log(err)})
                    break
            default: alert('update case not available')        
                    }

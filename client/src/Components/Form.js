@@ -136,7 +136,7 @@ export default class Form extends Component {
     submit_form=(event)=>{
         // event.preventDefault()
         const payload = this.state
-        axios.post( 'http://localhost:4000/order/add' ,payload)
+        axios.post( '/order/add' ,payload)
         .then((data)=>{
             console.log(data)
             alert("Successfully submitted form.")

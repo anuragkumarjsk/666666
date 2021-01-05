@@ -14,7 +14,7 @@ const TabShoworders = () => {
         {
             const payload = {username:login,password:pass}
 
-             axios.post("http://localhost:4000/user/add",payload)
+             axios.post("/user/add",payload)
              .then(()=>{
                   console.log('axios to mongodb')
              })
@@ -30,7 +30,7 @@ const TabShoworders = () => {
        {
         const payload = {username:login,password:pass}
 
-        axios.get("http://localhost:4000/user/registered",payload)
+        axios.get("/user/registered",payload)
         .then(()=>{
              console.log('axios to mongodb successfully logged in')
              setshow(true)

@@ -12,7 +12,7 @@ const Showorders = () => {
     const [gridColumnApi, setGridColumnApi] = useState(null);  
     const [rowData, setRowData] = useState([]);
     useEffect(()=>{
-       axios.get('http://localhost:4000/order/show')
+       axios.get('/order/show')
          .then((resp) =>{
              console.log(resp)
              setRowData(resp.data)
